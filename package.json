@@ -1,0 +1,19 @@
+{
+  "name": "js-struct",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "<skandla2002@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.16.0",
+    "eslint-loader": "^4.0.2",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "test": "karma start --no-single-run"
+  }
+}
