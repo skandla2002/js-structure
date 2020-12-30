@@ -107,7 +107,9 @@ function List() {
   }
 }
 
-var name = new List();
+// var name = new List();
 // name.append("test");
 // console.log(name.toString());
 // export default List;
+
+module.exports = List;

@@ -1,7 +1,7 @@
 {
   "name": "js-struct",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "author": "<skandla2002@gmail.com>",
   "license": "MIT",
   "devDependencies": {
