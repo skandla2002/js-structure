@@ -5,4 +5,4 @@ class struct {
     this.List = List;
   }
 }
-module.exports = new struct();
+module.exports = struct;
