@@ -112,4 +112,4 @@ function List() {
 // console.log(name.toString());
 // export default List;
 
-module.exports = List;
+module.exports = new List();

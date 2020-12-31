@@ -1,7 +1,8 @@
+const List = require("./structures/List");
 
-const List = require('./structures/List');
-
-function struct () {
+class struct {
+  constructor() {
     this.List = List;
+  }
 }
-module.export = struct;
+module.exports = new struct();
