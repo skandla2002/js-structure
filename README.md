@@ -57,3 +57,10 @@ map(fn) / filter(fn) // fn이 참인 경우만 return
 Array.matrix = function(numRows, numCols, initial);
 // 이차열 배열 은 for 문으로 처리, 들쭉날쭉 배열은 length 기준으로 처리, 객체 요소 포함 해열 잘 동작함
 ```
+
+
+--------------
+
+* 출처: 자바스크립트 자료구조와 알고리즘 / 마이클 맥밀런 지음(우정은 옮김) / O'REILLY(한빛미디어)   
+                                       
+
