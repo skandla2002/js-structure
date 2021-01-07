@@ -61,9 +61,33 @@ Array.matrix = function(numRows, numCols, initial);
 // 이차열 배열 은 for 문으로 처리, 들쭉날쭉 배열은 length 기준으로 처리, 객체 요소 포함 해열 잘 동작함
 ```
 
+## 연결 리스트:
 
---------------
+> 노드객체가 모여서 리스트 구성, 각 노드는 레퍼런스를 통해 리스트의 다른 노드와 연결됨
+> 삽입 / 삭제시 강점
 
-* 출처: 자바스크립트 자료구조와 알고리즘 / 마이클 맥밀런 지음(우정은 옮김) / O'REILLY(한빛미디어)   
-                                       
+### Node Class: 노드 데이터 저장하는 element와 next를 지정하는 값을 가짐
 
+```
+// 생성자 함수
+function Node(element){
+    this.element = element;
+    thie.next = null; // 최초는 null
+}
+```
+
+### 연결 리스트 Class
+
+```
+function LList() {
+    this.head = new Node("head");
+    this.find = find;
+    this.insert = insert;
+    this.remove = remove;
+    this.display = display;
+}
+```
+
+---
+
+- 출처: 자바스크립트 자료구조와 알고리즘 / 마이클 맥밀런 지음(우정은 옮김) / O'REILLY(한빛미디어)
