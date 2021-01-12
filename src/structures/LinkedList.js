@@ -12,6 +12,9 @@ function LinkedList() {
   this.findPrevious = findPrevious;
   this.remove = remove;
   /* 단방향 LinkedList 끝 */
+  /* 양방향 LinkedList 시작 */
+
+  /* 양방향 LinkedList 끝 */
 }
 
 function find(item) {
