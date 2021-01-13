@@ -1,6 +1,9 @@
 function Node(el) {
   this.element = el;
   this.next = null;
+  /* 양방향 Node 시작 */
+  this.prev = null;
+  /* 양방향 Node 끝 */
 }
 
 function LinkedList() {
@@ -9,11 +12,12 @@ function LinkedList() {
   this.fine = find;
   this.insert = insert;
   this.display = display;
-  this.findPrevious = findPrevious;
+  // this.findPrevious = findPrevious; // 양방향에서는 사용되지 않음
   this.remove = remove;
   /* 단방향 LinkedList 끝 */
   /* 양방향 LinkedList 시작 */
-
+  this.findLast = findLast;
+  this.dispReverse = dispReverse;
   /* 양방향 LinkedList 끝 */
 }
 
@@ -29,6 +33,7 @@ function insert(newElement, item) {
   var newNode = new Node(newElement);
   var current = this.find(item);
   newNode.next = current.next;
+  newNode.prev = current; // 양방향
   current.next = newNode;
 }
 
@@ -50,11 +55,42 @@ function findPrevious(item) {
   return currNode;
 }
 
+/* 단 방향 */
+// function remove(item) {
+
+//   var prevNode = this.findPrevious(item);
+//   if (!(prevNode.next == null)) {
+//     prevNode.next = prevNode.next.next;
+//   }
+// }
+
+/* 양방향 */
 function remove(item) {
-  var prevNode = this.findPrevious(item);
-  if (!(prevNode.next == null)) {
-    prevNode.next = prevNode.next.next;
+  var currNode = this.find(item);
+  if (!(currNode.next == null)) {
+    currNode.prev.next = currNode.next;
+    currNode.next.prev = currNode.prev;
+    currNode.next = null;
+    currNode.prev = null;
   }
 }
 
+/* 양방향 */
+function findLast() {
+  var currNode = this.head;
+  while (!(currNode.next == null)) {
+    currNode = currNode.next;
+  }
+  return currNode;
+}
+
+/* 양방향 */
+function dispReverse() {
+  var currNode = this.head;
+  currNode = this.findLast();
+  while (!(currNode.prev == null)) {
+    print(currNode.element);
+    currNode = currNode.prev;
+  }
+}
 modules.export = LinkedList;
