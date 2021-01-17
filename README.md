@@ -88,7 +88,7 @@ function LList() {
 }
 ```
 
-### 딕셔너리
+### 딕셔너리(Dictionary 구조)
 
 ### 해싱
 
@@ -99,8 +99,6 @@ function LList() {
 ### 정렬(버블 정렬, 퀵정렬)
 
 ### 검색
-
-### Dictionaly 구조
 
 ---
 
